@@ -10,6 +10,7 @@ def main():
     producto["precio"] = precio
     producto["cantidad"] = cantidad
     print("El diccionario es:", producto)
+    print("FInalizo el programa")
 
 if __name__ == "__main__":
     main()
