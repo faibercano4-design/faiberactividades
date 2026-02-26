@@ -1,8 +1,23 @@
 
 estudiantes = [
-    {"Nombre ": "Andres", "Notas": [3.0, 4.5, 4.0]},
+    {"Nombre": "Andres", "Notas": [3.0, 4.5, 4.0]},
     {"Nombre" : "Martes", "Notas": [4.0, 5.0, 3.5]},
     {"Nombre" : "Fabio", "Notas" :[3.6, 4.2, 3.5]}
 ]
 print("---Datos cargados---")
 print(f"Total de estudiantes: {len(estudiantes)}")
+
+def reporte(estudiantes):
+    print("---REPORTE FINAL---")
+    for est in estudiantes:
+        suma = sum(est["Notas"])
+        prom = suma / len(est["Notas"])
+
+        if prom >= 3.0:
+            estado = "APROBADO"
+        else:
+            estado = "REPROBADO"
+
+        print(f"Estudiante: {est["Nombre"]} su estado es: {estado}")  
+
+reporte(estudiantes)
