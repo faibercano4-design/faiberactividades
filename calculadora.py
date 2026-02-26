@@ -46,7 +46,7 @@ numero1 = int(input("ingrese el valor 1:"))
 numero2 = int(input("ingrese el valor 2:"))
 
 if operacion_usuario == 1:
- suma(numero1, numero2)  
+ suma(numero1, numero2)   
 
 elif operacion_usuario == 3:
  multiplicar(numero1, numero2)
